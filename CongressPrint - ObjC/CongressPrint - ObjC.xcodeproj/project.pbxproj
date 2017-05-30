@@ -13,6 +13,11 @@
 		A2DBFBCB1ED517890009EB1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2DBFBC91ED517890009EB1B /* Main.storyboard */; };
 		A2DBFBCD1ED517890009EB1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2DBFBCC1ED517890009EB1B /* Assets.xcassets */; };
 		A2DBFBD01ED517890009EB1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2DBFBCE1ED517890009EB1B /* LaunchScreen.storyboard */; };
+		A2DBFBDA1ED519160009EB1B /* APIRequestManager.h in Sources */ = {isa = PBXBuildFile; fileRef = A2DBFBD91ED519160009EB1B /* APIRequestManager.h */; };
+		A2DBFBDC1ED519FD0009EB1B /* APIRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DBFBDB1ED519FD0009EB1B /* APIRequestManager.m */; };
+		A2DBFC0A1ED6000D0009EB1B /* CongressTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DBFC091ED6000D0009EB1B /* CongressTableViewController.m */; };
+		A2DBFC0D1ED600DF0009EB1B /* PrintPhotos.h in Sources */ = {isa = PBXBuildFile; fileRef = A2DBFC0C1ED600DF0009EB1B /* PrintPhotos.h */; };
+		A2DBFC0F1ED6011C0009EB1B /* PrintPhotos.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DBFC0E1ED6011C0009EB1B /* PrintPhotos.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,12 @@
 		A2DBFBCC1ED517890009EB1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2DBFBCF1ED517890009EB1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A2DBFBD11ED517890009EB1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2DBFBD91ED519160009EB1B /* APIRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIRequestManager.h; sourceTree = "<group>"; };
+		A2DBFBDB1ED519FD0009EB1B /* APIRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIRequestManager.m; sourceTree = "<group>"; };
+		A2DBFC081ED6000D0009EB1B /* CongressTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CongressTableViewController.h; sourceTree = "<group>"; };
+		A2DBFC091ED6000D0009EB1B /* CongressTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CongressTableViewController.m; sourceTree = "<group>"; };
+		A2DBFC0C1ED600DF0009EB1B /* PrintPhotos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrintPhotos.h; sourceTree = "<group>"; };
+		A2DBFC0E1ED6011C0009EB1B /* PrintPhotos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrintPhotos.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,9 +70,10 @@
 			isa = PBXGroup;
 			children = (
 				A2DBFBC31ED517890009EB1B /* AppDelegate.h */,
+				A2DBFC0B1ED600B90009EB1B /* View Controllers */,
+				A2DBFC071ED5FF720009EB1B /* APIRequestManager */,
+				A2DBFC101ED6012D0009EB1B /* Models */,
 				A2DBFBC41ED517890009EB1B /* AppDelegate.m */,
-				A2DBFBC61ED517890009EB1B /* ViewController.h */,
-				A2DBFBC71ED517890009EB1B /* ViewController.m */,
 				A2DBFBC91ED517890009EB1B /* Main.storyboard */,
 				A2DBFBCC1ED517890009EB1B /* Assets.xcassets */,
 				A2DBFBCE1ED517890009EB1B /* LaunchScreen.storyboard */,
@@ -77,6 +89,35 @@
 				A2DBFBC11ED517890009EB1B /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A2DBFC071ED5FF720009EB1B /* APIRequestManager */ = {
+			isa = PBXGroup;
+			children = (
+				A2DBFBD91ED519160009EB1B /* APIRequestManager.h */,
+				A2DBFBDB1ED519FD0009EB1B /* APIRequestManager.m */,
+			);
+			name = APIRequestManager;
+			sourceTree = "<group>";
+		};
+		A2DBFC0B1ED600B90009EB1B /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A2DBFC081ED6000D0009EB1B /* CongressTableViewController.h */,
+				A2DBFC091ED6000D0009EB1B /* CongressTableViewController.m */,
+				A2DBFBC61ED517890009EB1B /* ViewController.h */,
+				A2DBFBC71ED517890009EB1B /* ViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		A2DBFC101ED6012D0009EB1B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A2DBFC0C1ED600DF0009EB1B /* PrintPhotos.h */,
+				A2DBFC0E1ED6011C0009EB1B /* PrintPhotos.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,9 +191,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2DBFBDC1ED519FD0009EB1B /* APIRequestManager.m in Sources */,
+				A2DBFBDA1ED519160009EB1B /* APIRequestManager.h in Sources */,
+				A2DBFC0F1ED6011C0009EB1B /* PrintPhotos.m in Sources */,
 				A2DBFBC81ED517890009EB1B /* ViewController.m in Sources */,
 				A2DBFBC51ED517890009EB1B /* AppDelegate.m in Sources */,
 				A2DBFBC21ED517890009EB1B /* main.m in Sources */,
+				A2DBFC0A1ED6000D0009EB1B /* CongressTableViewController.m in Sources */,
+				A2DBFC0D1ED600DF0009EB1B /* PrintPhotos.h in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +357,7 @@
 				A2DBFBD61ED517890009EB1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
